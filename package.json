@@ -1,0 +1,27 @@
+{
+  "name": "tlc_node_beginner_tutor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsl150101/tlc_node_beginner_tutor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsl150101/tlc_node_beginner_tutor/issues"
+  },
+  "homepage": "https://github.com/rsl150101/tlc_node_beginner_tutor#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
