@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+const postRouter = require("./routes/posts.routes");
+
 const app = express();
 const PORT = 3000;
 
@@ -9,6 +11,9 @@ const db = mongoose.connection;
 
 db.on("error", (err) => console.log(err));
 db.once("open", () => console.log("✅ DB가 연결되었습니다!"));
+
+app.use(express.json());
+app.use("/posts", postRouter);
 
 app.listen(PORT, () => {
   console.log(`✅ 서버가 연결되었습니다! http://localhost:${PORT}`);

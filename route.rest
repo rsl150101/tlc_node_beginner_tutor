@@ -1,0 +1,36 @@
+GET http://localhost:3000/posts
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "user" : "test",
+    "title" : "title",
+    "content" : "content",
+    "password" : "test1234"
+}
+
+###
+
+GET http://localhost:3000/posts/63ee6a817e7567416d66fa94
+
+###
+
+PATCH http://localhost:3000/posts/63ee6a817e7567416d66fa94
+Content-Type: application/json
+
+{
+    "user": "edit test",
+    "password": "test1234"
+}
+
+###
+
+DELETE http://localhost:3000/posts/63ee6a817e7567416d66fa94
+Content-Type: application/json
+
+{
+    "password" : "test1234"
+}
