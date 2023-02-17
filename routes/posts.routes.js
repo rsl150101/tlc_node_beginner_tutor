@@ -87,7 +87,7 @@ router.patch("/:id", async (req, res) => {
       return res.status(500).json({ message: err.message });
     }
   } else {
-    res.status(401).json({ message: "비밀번호가 일치하지 않습니다." });
+    return res.status(401).json({ message: "비밀번호가 일치하지 않습니다." });
   }
 });
 
@@ -119,7 +119,7 @@ router.delete("/:id", async (req, res) => {
       return res.status(500).json({ message: err.message });
     }
   } else {
-    res.status(401).json({ message: "비밀번호가 일치하지 않습니다." });
+    return res.status(401).json({ message: "비밀번호가 일치하지 않습니다." });
   }
 });
 

@@ -34,3 +34,40 @@ Content-Type: application/json
 {
     "password" : "test1234"
 }
+
+###
+GET http://localhost:3000/comments
+
+###
+
+POST http://localhost:3000/comments/63ef5b26bcbc468a6e2f9b92
+Content-Type: application/json
+
+{
+    "user":"comment test2",
+    "content":"test",
+    "password":"test123"
+}
+
+###
+
+GET http://localhost:3000/comments/63ef5b26bcbc468a6e2f9b92
+
+###
+
+PATCH http://localhost:3000/comments/63ef5bbff550d5005f829e82
+Content-Type: application/json
+
+{
+    "content":"edit test",
+    "password":"test12"
+}
+
+###
+
+Delete http://localhost:3000/comments/63ef665de7228ee5c88d4e9a
+Content-Type: application/json
+
+{
+    "password":"test123"
+}
